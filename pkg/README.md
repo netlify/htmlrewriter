@@ -7,7 +7,7 @@ it does not include support for async-handlers.
 
 ```ts
 import { 
-  HTMLRewriter, init, Element
+  HTMLRewriter, init, Element, Comment, TextChunk, Doctype, DocumentEnd
 } from 'https://deno.land/x/htmlrewriter/src/index.ts'
 
 // Call this once, and before calling HTMLRewriter
