@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+set -eux
+
+deno run --allow-read --allow-run --allow-env --allow-write ./scripts/build.ts
+# deno fmt
+deno test --allow-read --allow-net
