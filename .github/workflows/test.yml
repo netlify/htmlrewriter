@@ -12,7 +12,7 @@ jobs:
       - name: Setup Deno
         uses: denoland/setup-deno@v1
         with:
-          deno-version: 2.6.0
+          deno-version: 2.6.3
 
       - name: Check formatting
         run: deno fmt src/ --ignore=src/vendor --check
