@@ -28,13 +28,13 @@ function rewriter(response: Response): Response {
         })
         .onDocument({
             doctype(doctype: Doctype){
-                console.log('Incoming doctype':, doctype);
+                console.log('Incoming doctype:', doctype);
             },
             comments(comment: Comment){
-                console.log('Incoming comment':, comment);
+                console.log('Incoming comment:', comment);
             },
             text(text: TextChunk){
-                console.log('Incoming text-chunk':, text);
+                console.log('Incoming text-chunk:', text);
             },
             end(end: DocumentEnd){
                 console.log('incoming document-end:', end);
